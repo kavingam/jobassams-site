@@ -1,0 +1,508 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.spinner-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    color: rgb(201, 5, 67);
+}
+
+.web-logo {
+    color: #393053;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.kt-0 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+
+.kt-1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.kt-2 {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.kt-3 {
+    color: rgb(201, 5, 67);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.kt-4 {
+    color: rgb(5, 15, 201);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.kt-4:hover {
+    color: black;
+}
+
+.kt-5 {
+    font-size: clamp(0.8rem, 2vw, 1.125rem);
+}
+
+.kt-9 {
+    color: #18122B;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+
+.logo-5 {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.head-content {
+    background: linear-gradient(70deg, rgb(201, 5, 67), rgb(201, 5, 67), rgb(137, 2, 45));
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    color: #fff;
+    font-size: 1.0rem;
+    padding: 0.8rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 10px 20px;
+    color: white;
+}
+
+.bg-linear {
+    background: linear-gradient(70deg, rgb(201, 5, 67), rgb(201, 5, 67), rgb(137, 2, 45));
+}
+
+.bg-linear-4 {
+    background: linear-gradient(70deg, rgb(90, 88, 226), rgb(95, 41, 211), rgb(84, 6, 193));
+}
+
+.bg-linear-5 {
+    background: linear-gradient(70deg, rgb(21, 177, 12), rgb(10, 168, 12), rgb(35, 141, 29));
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Toggler Button */
+.navbar-toggler {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background: #393053;
+    height: 2px;
+    width: 20px;
+    margin: 2px 0;
+    transition: 0.3s;
+}
+
+.search-bar {
+    cursor: pointer;
+    color: #393053;
+    font-size: 1.3rem;
+}
+
+.search-bar:hover {
+    cursor: pointer;
+    color: rgb(201, 5, 67);
+    /* font-size: 1.5rem; */
+}
+
+.social-icons {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #18122B;
+}
+
+.social-icons a span {
+    margin-right: 0.5rem;
+}
+
+.social-icons a span i {
+    margin-right: 0.3rem;
+}
+
+/* Navbar Links */
+.navbar-menu {
+    display: flex;
+    gap: 2px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+.navbar-menu a:hover {
+    color: rgb(201, 5, 67);
+}
+
+.navbar-menu .active {
+    color: rgb(201, 5, 67);
+}
+
+.navbar-menu .active:hover {
+    color: black;
+}
+
+.op-box {
+    cursor: pointer;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+
+.op-box:hover {
+    cursor: pointer;
+    color: rgb(201, 5, 67);
+    box-shadow: 0 0px 5px rgb(201, 5, 67);
+}
+
+.op-box .kt-5:hover {
+    color: rgb(201, 5, 67);
+}
+
+.copy-right {
+    background-color: #18122B;
+    font-size: 0.8rem;
+    padding: 1.5rem;
+}
+
+.copy-right .footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: clamp(0.6rem, 1.0vw, 0.8rem);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-link:hover {
+    color: rgb(201, 5, 67);
+}
+
+/* Extra small (Phones) */
+@media (max-width: 576px) {
+    .web-logo {
+        color: #393053;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .dotted-line {
+        border-bottom: 0.1rem dotted #fff;
+    }
+
+    .kt-0 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.9rem;
+        font-weight: 700;
+    }
+
+    .kt-1 {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .kt-3 {
+        color: rgb(201, 5, 67);
+        font-size: 0.8rem;
+    }
+
+    .kt-5 {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+    }
+
+    .kt-9 {
+        color: #18122B;
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+
+    .icons {
+        width: 50%;
+        height: auto;
+    }
+
+    .navbar-toggler {
+        display: flex;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+        text-align: start;
+        z-index: 1;
+    }
+
+    .navbar-menu a {
+        color: #18122B;
+        font-size: 0.9rem;
+        padding: 1.0rem;
+        /* border-bottom: 0.1rem solid #bc073a; */
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    /* Animation for the Toggler */
+    .navbar-toggler.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .navbar-toggler.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-toggler.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .wp-btn {
+        background-color: #25D366;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.0rem;
+        color: #fff;
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    .tel-btn {
+        background-color: #3c74c7;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.0rem;
+        color: #fff;
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    .head-content {
+        background: linear-gradient(70deg, rgb(201, 5, 67), rgb(201, 5, 67), rgb(137, 2, 45));
+        border: 1px solid hsla(0, 0%, 0%, 0.1);
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+
+}
+
+/* Small (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .icons {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Medium (Laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+    .icons {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Large (Desktops) */
+@media (min-width: 993px) {
+    .icons {
+        width: 50%;
+        height: auto;
+    }
+
+    .wp-btn {
+        background-color: #25D366;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.0rem;
+        color: #fff;
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    .tel-btn {
+        background-color: #3c74c7;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.0rem;
+        color: #fff;
+        padding: 0.2rem;
+        width: 100%;
+    }
+
+    /* .navbar-menu {
+
+  } */
+
+    .navbar-menu a {
+        color: #18122B;
+        font-size: 1.0rem;
+        padding: 1.0rem;
+        /* border-bottom: 0.1rem solid #bc073a; */
+        border: none;
+        box-shadow: none;
+    }
+}
+
+
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+.cardx {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.cardx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.3rem;
+    height: 100%;
+    background-color: currentColor;
+    box-shadow: 0 0 10px currentColor;
+    animation: blink 1s infinite;
+}
+
+.cardx::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+    background-color: currentColor;
+    box-shadow: 0 0 10px currentColor;
+    animation: blink 1s infinite;
+}
+
+.whatsapp-card {
+    color: #25D366;
+    /* WhatsApp green */
+}
+
+.telegram-card {
+    color: #0088cc;
+    /* Telegram blue */
+}
+
+body.modal-open .modal-backdrop {
+    backdrop-filter: blur(20px);
+    /* Blur effect */
+    background-color: rgba(0, 0, 0, 0.55);
+    /* Slight dark overlay */
+}
+
+.is-invalid {
+    border-color: #dc3545 !important;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+
+.op-cardx {
+    background: #ffffff;
+    border: 2px solid #dee2e6;
+    padding: 1.2rem;
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 0 transparent;
+    cursor: pointer;
+    position: relative;
+}
+
+.op-cardx:hover {
+    box-shadow: 4px 6px 12px rgba(0, 153, 255, 0.2),
+        -4px -6px 12px rgba(255, 153, 0, 0.2);
+    transform: translateY(-3px);
+    border-left: 4px solid #7aafff;
+    /* #25D366; */
+    border-bottom: 4px solid #4c8cec;
+}
+
+.iconsx {
+    width: 23px;
+    height: 23px;
+    object-fit: contain;
+}
+
+@media (min-width: 993px) {
+    .op-cardx {
+        background: #ffffff;
+        border: 2px solid #dee2e6;
+        padding: 3.2rem;
+        border-radius: 0.75rem;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 0 transparent;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .op-cardx:hover {
+        box-shadow: 4px 6px 12px rgba(0, 153, 255, 0.2),
+            -4px -6px 12px rgba(255, 153, 0, 0.2);
+        transform: translateY(-3px);
+        border-left: 4px solid #7aafff;
+        /* #25D366; */
+        border-bottom: 4px solid #4c8cec;
+    }
+
+    .iconsx {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
