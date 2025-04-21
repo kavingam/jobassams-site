@@ -1,0 +1,63 @@
+{
+    "name": "Jobassams.Com",
+    "short_name": "App",
+    "description": "Latest Career Related Update Blog Post.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "assets/image/favicon/android-icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "assets/image/favicon/android-icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Open Home",
+        "short_name": "Home",
+        "description": "Go to Home Page",
+        "url": "/",
+        "icons": [
+          {
+            "src": "assets/image/favicon/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "Search Jobs",
+        "short_name": "Jobs",
+        "description": "Find new jobs",
+        "url": "/jobs",
+        "icons": [
+          {
+            "src": "assets/image/favicon/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          }
+        ]
+      },
+      {
+        "name": "Profile",
+        "short_name": "Profile",
+        "description": "Go to your profile",
+        "url": "/profile",
+        "icons": [
+          {
+            "src": "assets/image/favicon/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+          }
+        ]
+      }
+    ]
+  }
+  
